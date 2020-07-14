@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>${rootArtifactId}</artifactId>
+        <groupId>${groupId}</groupId>
+        <version>${version}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>${groupId}</groupId>
+    <artifactId>${shortArtifactId}-manager-controller</artifactId>
+
+    <dependencies>
+        <!-- freamwork core start -->
+        <dependency>
+            <groupId>org.seryu.framework</groupId>
+            <artifactId>seryu-framework-web</artifactId>
+        </dependency>
+        <!-- freamwork core end -->
+
+        <!-- restful api security start -->
+
+        <!-- restful api security end -->
+
+        <!-- business module start -->
+        <dependency>
+            <groupId>${groupId}</groupId>
+            <artifactId>${shortArtifactId}-manager-client</artifactId>
+        </dependency>
+        <!-- business module end -->
+
+        <!-- third library start -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>
+        <!-- third library end -->
+    </dependencies>
+</project>

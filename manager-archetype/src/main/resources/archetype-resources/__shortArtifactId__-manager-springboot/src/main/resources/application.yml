@@ -1,0 +1,38 @@
+server:
+  port: 9082 # 端口号请自行修改
+
+spring:
+  application:
+      name: ${shortArtifactId}-manager
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://xxxx:3306/${shortArtifactId}?zeroDateTimeBehavior=convertToNull&autoReconnect=true
+    username: username
+    password: password
+    type: com.alibaba.druid.pool.DruidDataSource
+# dubbo配置
+dubbo:
+  application:
+    name: seryu-${shortArtifactId}-provider
+    qos-accept-foreign-ip: false
+    qos-port: 44441
+    qos-enable: true
+  registry:
+    protocol: zookeeper
+    address: zk:2181
+    register: true
+  protocol:
+    name: dubbo
+    port: 28882 # 端口号请自行修改
+    serialization: hessian2
+    threadpool: fixed
+    threads: 100
+    iothreads: 9
+    queues: 0
+    accepts: 1000
+    payload: 8388608
+    charset: UTF-8
+    accesslog: true
+
