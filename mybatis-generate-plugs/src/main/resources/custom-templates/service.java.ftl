@@ -3,8 +3,7 @@ package ${package.Service};
 import ${cfg.packDTO}.${entity?substring(0,entity?length-2)}Dto;
 import ${cfg.packDTO}.${entity?substring(0,entity?length-2)}QryDto;
 import ${superServiceClassPackage};
-import com.tyyd.potato.core.data.Page;
-import com.tyyd.potato.core.data.PageData;
+
 
 /**
  * <p>

@@ -1,6 +1,5 @@
 package ${cfg.packQry};
 
-import com.tyyd.potato.core.data.Page;
 
 import lombok.Data;
 import lombok.ToString;

@@ -1,6 +1,5 @@
 package ${cfg.packDTO};
 
-import com.tyyd.potato.core.data.BaseDto;
 
 <#if swagger2>
 import io.swagger.annotations.ApiModel;

@@ -9,8 +9,7 @@ import ${superServiceImplClassPackage};
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.tyyd.potato.core.data.Page;
-import com.tyyd.potato.core.data.PageData;
+
 
 /**
  * <p>
